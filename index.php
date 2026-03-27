@@ -13,6 +13,7 @@
     include("menu.php");
     ?>
     <div class="content">
+        <div class="card">
         <h1>Biblioteca Digital Municipal</h1>
         <p>A Biblioteca Digital Municipal tem como missão promover o acesso ao conhecimento, à cultura e à educação por meio de um acervo digital acessível a toda a comunidade.</p>
         <br>
@@ -23,8 +24,8 @@
         </p>
 
     </div>
-     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCdU_8dHOx6YXioT5OlcKUPGca7KMTej91BQ&s" 
+     <img src="https://joanofjuly.com/wp-content/uploads/2016/12/trinity-college-library.jpg" 
      alt="Uma linda biblioteca" style="width:100%;border-radius:12px">
-
+    </div>
 </body>
 </html>
