@@ -16,7 +16,7 @@
             <p> Adicione uma nova obra ao acervo digital da biblioteca. Preencha as informações
                 abaixo e envie a capa e o arquivo digital do livro em formato pdf.</p>
                 <br>
-                <form action="" method="post">
+                <form action="salvar_livro.php" method="post">
                     <label> Título do Livro</label>
                     <input type="text" name="titulo" required>
                     <label> Autor</label>
@@ -37,13 +37,15 @@
                     <option> Biografia</option>
                     <option> Infantil</option>
 
-                    </select>
-                    <br><br>
-                    <label> Capa do Livro (imagem)</label>
-                    <input type="file" name="arquivo" accept="application/pdf" required>
-                    <br>
-                    <button class="btn">Cadastrar Livro</button>
-                    
+                       </select>
+                <br><br>
+                <label > Capa do livro (imagem)</label>
+                <input type="file" name="capa" accept="image/*" required>
+                <label > Arquivo do livro (pdf)</label>
+                <input type="file" name="arquivo" accept="application/pdf" required>
+                <br>
+                <button class="btn">Cadastrar Livro</button>
+                
 
 
 
