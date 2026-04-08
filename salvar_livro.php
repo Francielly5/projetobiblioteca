@@ -19,6 +19,9 @@ $categoria = $_POST["categoria"];
 $capa = time()."_".preg_replace("/[^a-zA-Z0-9.]/","_",$_FILES["capa"]["name"]);//se tiver qualquer tipo de caractere, irá retira-lo automaticamente
 $pdf = time()."_".preg_replace("/[^a-zA-Z0-9.]/","_",$_FILES["arquivo"]["name"]);
 
+move_uploaded_file($_FILES["capa"]["tmp_name"], "capas/" . $capa);
+move_uploaded_file($_FILES["arquivo"]["tmp_name"], "pdfs/" . $pdf);
+
 //colocar como disponivel o livro
 $status = "disponivel";
 //como estamos usando texto iremos inserir o caracter | para separar as informações
